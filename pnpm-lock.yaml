@@ -63,6 +63,9 @@ importers:
       '@alloy-js/typescript':
         specifier: ^0.15.0
         version: 0.15.0
+      '@typespec-typescript/compiler-helper':
+        specifier: workspace:*
+        version: link:../compiler-helper
       '@typespec/compiler':
         specifier: ^1.0.0
         version: 1.0.0(@types/node@22.15.17)

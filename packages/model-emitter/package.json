@@ -19,7 +19,8 @@
     "@alloy-js/core": "^0.15.0",
     "@alloy-js/typescript": "^0.15.0",
     "@typespec/compiler": "^1.0.0",
-    "@typespec/emitter-framework": "^0.7.0"
+    "@typespec/emitter-framework": "^0.7.0",
+    "@typespec-typescript/compiler-helper": "workspace:*"
   },
   "devDependencies": {
     "typescript": "^5.8.3"
