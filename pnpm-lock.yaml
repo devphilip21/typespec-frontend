@@ -6,22 +6,7 @@ settings:
 
 importers:
 
-  .: {}
-
-  packages/model-emitter:
-    dependencies:
-      '@alloy-js/core':
-        specifier: ^0.15.0
-        version: 0.15.0
-      '@alloy-js/typescript':
-        specifier: ^0.15.0
-        version: 0.15.0
-      '@typespec/compiler':
-        specifier: ^1.0.0
-        version: 1.0.0
-      '@typespec/emitter-framework':
-        specifier: ^0.7.0
-        version: 0.7.0(@alloy-js/core@0.15.0)(@alloy-js/typescript@0.15.0)(@typespec/compiler@1.0.0)(@typespec/http@1.0.1(@typespec/compiler@1.0.0))(@typespec/rest@0.70.0(@typespec/compiler@1.0.0)(@typespec/http@1.0.1(@typespec/compiler@1.0.0)))
+  .:
     devDependencies:
       '@eslint/js':
         specifier: ^9.26.0
@@ -47,6 +32,35 @@ importers:
       typescript-eslint:
         specifier: ^8.32.1
         version: 8.32.1(eslint@9.26.0)(typescript@5.8.3)
+
+  packages/compiler-helper:
+    dependencies:
+      '@typespec/compiler':
+        specifier: ^1.0.0
+        version: 1.0.0
+    devDependencies:
+      typescript:
+        specifier: ^5.8.3
+        version: 5.8.3
+
+  packages/model-emitter:
+    dependencies:
+      '@alloy-js/core':
+        specifier: ^0.15.0
+        version: 0.15.0
+      '@alloy-js/typescript':
+        specifier: ^0.15.0
+        version: 0.15.0
+      '@typespec/compiler':
+        specifier: ^1.0.0
+        version: 1.0.0
+      '@typespec/emitter-framework':
+        specifier: ^0.7.0
+        version: 0.7.0(@alloy-js/core@0.15.0)(@alloy-js/typescript@0.15.0)(@typespec/compiler@1.0.0)(@typespec/http@1.0.1(@typespec/compiler@1.0.0))(@typespec/rest@0.70.0(@typespec/compiler@1.0.0)(@typespec/http@1.0.1(@typespec/compiler@1.0.0)))
+    devDependencies:
+      typescript:
+        specifier: ^5.8.3
+        version: 5.8.3
 
 packages:
 

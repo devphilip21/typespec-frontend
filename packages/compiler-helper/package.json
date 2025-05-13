@@ -1,0 +1,21 @@
+{
+  "name": "@typespec-typescript/compiler-helper",
+  "version": "0.0.1",
+  "type": "module",
+  "exports": {
+    "./*": "./dist/*"
+  },
+  "scripts": {
+    "prebuild": "eslint src",
+    "build": "tsc"
+  },
+  "peerDependencies": {
+    "@typespec/compiler": "^1.0.0"
+  },
+  "dependencies": {
+    "@typespec/compiler": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}

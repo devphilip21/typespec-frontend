@@ -1,13 +1,24 @@
 {
   "private": true,
   "name": "typespec-typescript",
+  "packageManager": "pnpm@10.8.0",
   "engines": {
     "node": ">=22.13.1"
   },
   "scripts": {
-    "build:emitter": "pnpm --filter @typespec-typescript/model-emitter build"
+    "build:helper": "pnpm --filter @typespec-typescript/compiler-helper build",
+    "build:emitter": "pnpm build:helper && pnpm --filter @typespec-typescript/model-emitter build"
   },
   "author": "devphilip21 <philip21.dev@gmail.com>",
   "license": "MIT",
-  "packageManager": "pnpm@10.8.0"
+  "devDependencies": {
+    "@eslint/js": "^9.26.0",
+    "eslint": "^9.26.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-perfectionist": "^4.13.0",
+    "eslint-plugin-prettier": "^5.4.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.32.1"
+  }
 }
