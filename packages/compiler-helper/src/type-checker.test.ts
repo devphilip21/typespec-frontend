@@ -11,7 +11,7 @@ import {
   Decorator,
   DecoratorApplication,
 } from '@typespec/compiler';
-import { isBuiltInType } from './declaration.ts';
+import { isBuiltInType } from './type-checker.ts';
 
 describe('isBuiltInType', () => {
   let program: Program;
