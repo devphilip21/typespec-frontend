@@ -7,17 +7,23 @@
   },
   "scripts": {
     "build:helper": "pnpm --filter @typespec-typescript/compiler-helper build",
-    "build:emitter": "pnpm build:helper && pnpm --filter @typespec-typescript/model-emitter build"
+    "build:emitter": "pnpm --filter @typespec-typescript/model-emitter build",
+    "build": "pnpm build:helper && pnpm build:emitter",
+    "test": "pnpm -r test"
   },
   "author": "devphilip21 <philip21.dev@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@eslint/js": "^9.26.0",
+    "@swc/jest": "^0.2.38",
+    "@types/jest": "^29.5.14",
     "eslint": "^9.26.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-perfectionist": "^4.13.0",
     "eslint-plugin-prettier": "^5.4.0",
+    "jest": "^29.7.0",
     "prettier": "^3.5.3",
+    "ts-jest": "^29.3.2",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.32.1"
   }
