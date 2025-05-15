@@ -1,4 +1,4 @@
-import { ListenerFlow, navigateProgram, Program, Type } from '@typespec/compiler';
+import { type Program, type Type, ListenerFlow, navigateProgram } from '@typespec/compiler';
 import { isBuiltInType, isDeclarationType } from './type-checker.ts';
 import { $ } from '@typespec/compiler/typekit';
 

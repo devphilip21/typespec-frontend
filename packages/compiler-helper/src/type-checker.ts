@@ -1,4 +1,4 @@
-import { Program, Type } from '@typespec/compiler';
+import type { Program, Type } from '@typespec/compiler';
 import { $ } from '@typespec/compiler/typekit';
 
 export function isBuiltInType(program: Program, type: Type) {
