@@ -1,6 +1,6 @@
 import { Model } from '@typespec/compiler';
 import { TsModel } from './TsModel.ts';
-import { collectNamespaces } from '@typespec-typescript/compiler-helper';
+import { collectNamespaces } from '@typespec-frontend/compiler-helper';
 import { snakeCase } from 'change-case';
 import { join } from 'path';
 

@@ -1,5 +1,5 @@
 {
-  "name": "@typespec-typescript/model-emitter",
+  "name": "@typespec-frontend/model-emitter",
   "version": "0.0.1",
   "type": "module",
   "exports": {
@@ -18,13 +18,13 @@
   "dependencies": {
     "@alloy-js/core": "^0.15.0",
     "@alloy-js/typescript": "^0.15.0",
-    "@typespec-typescript/compiler-helper": "workspace:*",
+    "@typespec-frontend/compiler-helper": "workspace:*",
     "@typespec/compiler": "^1.0.0",
     "@typespec/emitter-framework": "^0.7.0",
     "change-case": "^5.4.4"
   },
   "devDependencies": {
     "typescript": "^5.8.3",
-    "@typespec-typescript/builder": "workspace:*"
+    "@typespec-frontend/builder": "workspace:*"
   }
 }

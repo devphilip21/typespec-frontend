@@ -1,5 +1,5 @@
 {
-  "name": "@typespec-typescript/compiler-helper",
+  "name": "@typespec-frontend/compiler-helper",
   "version": "0.0.1",
   "type": "module",
   "main": "./dist/index.js",
@@ -17,6 +17,6 @@
   },
   "devDependencies": {
     "typescript": "^5.8.3",
-    "@typespec-typescript/builder": "workspace:*"
+    "@typespec-frontend/builder": "workspace:*"
   }
 }

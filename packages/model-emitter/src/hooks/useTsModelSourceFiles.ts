@@ -1,5 +1,5 @@
 import { useTsp } from '@typespec/emitter-framework';
-import { collectDeclarationTypes } from '@typespec-typescript/compiler-helper';
+import { collectDeclarationTypes } from '@typespec-frontend/compiler-helper';
 import { createTsModelSourceFileMeta, TsModelSourceFile } from '~/core/TsModelSource';
 import { createTsModel } from '~/core/TsModel';
 
