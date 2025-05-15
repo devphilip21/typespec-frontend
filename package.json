@@ -1,13 +1,13 @@
 {
   "private": true,
-  "name": "typespec-typescript",
+  "name": "typespec-frontend",
   "packageManager": "pnpm@10.8.0",
   "engines": {
     "node": ">=22.13.1"
   },
   "scripts": {
-    "build:helper": "pnpm --filter @typespec-typescript/compiler-helper build",
-    "build:emitter": "pnpm --filter @typespec-typescript/model-emitter build",
+    "build:helper": "pnpm --filter @typespec-frontend/compiler-helper build",
+    "build:emitter": "pnpm --filter @typespec-frontend/model-emitter build",
     "build": "pnpm build:helper && pnpm build:emitter",
     "test": "pnpm -r test"
   },

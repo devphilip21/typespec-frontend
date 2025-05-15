@@ -1,5 +1,5 @@
 {
-  "name": "@typespec-typescript/builder",
+  "name": "@typespec-frontend/builder",
   "version": "0.0.1",
   "private": true,
   "bin": "./cmd.cjs",
