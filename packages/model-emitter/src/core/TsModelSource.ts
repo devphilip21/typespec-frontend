@@ -1,8 +1,8 @@
-import { Model } from '@typespec/compiler';
-import { TsModel } from './TsModel.ts';
-import { collectNamespaces } from '@typespec-frontend/compiler-helper';
 import { snakeCase } from 'change-case';
 import { join } from 'path';
+import { Model } from '@typespec/compiler';
+import { collectNamespaces } from '@typespec-frontend/compiler-helper';
+import { TsModel } from './TsModel';
 
 export interface TsModelSourceFileMeta {
   dirPath: string; // directory path (relative)

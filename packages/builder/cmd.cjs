@@ -3,6 +3,7 @@
 
 const esbuild = require('esbuild');
 const { dtsPlugin } = require("esbuild-plugin-d.ts");
+const aliasPlugin = require('esbuild-plugin-alias');
 const path = require('path');
 
 function parseArgs() {
@@ -48,7 +49,18 @@ async function buildTs(entryPoint, outputFile) {
       outfile: outputFilePath,
       format: 'esm',
       platform: 'node',
-      plugins: [dtsPlugin()],
+      // @ts-ignore
+      plugins: [dtsPlugin(), aliasPlugin({
+        '@typespec-frontend/compiler-helper': path.resolve(__dirname, '../compiler-helper/dist/index.esm.js'),
+      })],
+      external: [
+        '@alloy-js/core',
+        '@alloy-js/typescript',
+        '@typespec/compiler',
+        '@typespec/compiler/typekit',
+        '@typespec/emitter-framework',
+        'change-case',
+      ],
     });
     
     console.log('Build completed!');

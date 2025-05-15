@@ -1,5 +1,5 @@
 import { code } from '@alloy-js/core';
-import { getDoc, Type } from '@typespec/compiler';
+import { getDoc, type Type } from '@typespec/compiler';
 import { useTsp } from '@typespec/emitter-framework';
 
 export interface TypescriptCommentProps {

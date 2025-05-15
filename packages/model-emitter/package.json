@@ -2,15 +2,11 @@
   "name": "@typespec-frontend/model-emitter",
   "version": "0.0.1",
   "type": "module",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "default": "./dist/index.js"
-    }
-  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "prebuild": "eslint src --config=../../eslint.config.mjs",
-    "build": "tsc"
+    "build": "builder build:ts --entry src/index.ts --output dist/index.esm.js"
   },
   "peerDependencies": {
     "@typespec/compiler": "^1.0.0"

@@ -1,4 +1,4 @@
-import { Namespace } from '@typespec/compiler';
+import type { Namespace } from '@typespec/compiler';
 
 export function collectNamespaces(
   namespace: Namespace | undefined,
