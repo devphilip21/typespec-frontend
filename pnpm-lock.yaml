@@ -76,7 +76,7 @@ importers:
         specifier: ^5.8.3
         version: 5.8.3
 
-  packages/model-emitter:
+  packages/typescript-interface-emitter:
     dependencies:
       '@alloy-js/core':
         specifier: ^0.15.0

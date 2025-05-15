@@ -7,7 +7,7 @@
   },
   "scripts": {
     "build:helper": "pnpm --filter @typespec-frontend/compiler-helper build",
-    "build:emitter": "pnpm --filter @typespec-frontend/model-emitter build",
+    "build:emitter": "pnpm --filter @typespec-frontend/typescript-interface-emitter build",
     "build": "pnpm build:helper && pnpm build:emitter",
     "test": "pnpm -r test"
   },
