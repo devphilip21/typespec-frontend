@@ -22,6 +22,7 @@ export default tsEslint.config(
           varsIgnorePattern: '^_', // 변수 이름이 _로 시작하는 경우 무시
         },
       ],
+      '@typescript-eslint/no-empty-object-type': 'off',
     },
   },
   prettierConfig,

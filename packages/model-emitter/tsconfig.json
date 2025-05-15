@@ -4,7 +4,10 @@
     "jsx": "react-jsx",
     "jsxImportSource": "@alloy-js/core",
     "outDir": "./dist",
-    "rootDir": "./src"
+    "rootDir": "./src",
+    "paths": {
+      "~/*": ["./src/*"]
+    }
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/types/model-types"]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/types/model-type.ts"]
 }

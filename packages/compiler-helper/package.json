@@ -2,12 +2,11 @@
   "name": "@typespec-typescript/compiler-helper",
   "version": "0.0.1",
   "type": "module",
-  "exports": {
-    "./*": "./dist/*"
-  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "prebuild": "eslint src",
-    "build": "tsc",
+    "build": "builder build:ts --entry src/index.ts --output dist/index.esm.js",
     "test": "jest"
   },
   "peerDependencies": {
@@ -17,6 +16,7 @@
     "@typespec/compiler": "^1.0.0"
   },
   "devDependencies": {
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "@typespec-typescript/builder": "workspace:*"
   }
 }
