@@ -17,6 +17,8 @@
     "@eslint/js": "^9.26.0",
     "@swc/jest": "^0.2.38",
     "@types/jest": "^29.5.14",
+    "@types/node": "^22.15.18",
+    "esbuild": "^0.25.4",
     "eslint": "^9.26.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-perfectionist": "^4.13.0",

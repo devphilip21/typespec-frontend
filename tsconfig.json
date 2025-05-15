@@ -2,14 +2,14 @@
   "compilerOptions": {
     "target": "ES2022",
     "lib": ["ES2022", "DOM"],
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "ES2022",
+    "moduleResolution": "Bundler",
     "esModuleInterop": false,
     "sourceMap": true,
     "declaration": true,
     "allowJs": false,
     "strict": true,
     "rewriteRelativeImportExtensions": true,
-    "types": ["jest"]
+    "types": ["jest", "node"]
   }
 }

@@ -1,0 +1,10 @@
+{
+  "name": "@typespec-typescript/builder",
+  "version": "0.0.1",
+  "private": true,
+  "bin": "./cmd.cjs",
+  "dependencies": {
+    "esbuild": "^0.25.4",
+    "esbuild-plugin-d.ts": "^1.3.1"
+  }
+}
