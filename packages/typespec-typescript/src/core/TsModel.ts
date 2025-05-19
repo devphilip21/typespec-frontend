@@ -4,6 +4,7 @@ import { createTsModelProperty, TsModelProperty } from './TsModelProperty';
 export interface TsModel {
   name: string;
   properties: TsModelProperty[];
+  origin: Model;
 }
 
 export function createTsModel(model: Model): TsModel {
@@ -16,5 +17,6 @@ export function createTsModel(model: Model): TsModel {
   return {
     name: model.name,
     properties,
+    origin: model,
   };
 }

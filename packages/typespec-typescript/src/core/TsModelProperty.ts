@@ -4,6 +4,7 @@ export interface TsModelProperty {
   name: string;
   typeReferenceName: string;
   optional: boolean;
+  origin: ModelProperty;
 }
 
 export function createTsModelProperty(propertyName: string, property: ModelProperty): TsModelProperty {
@@ -11,6 +12,7 @@ export function createTsModelProperty(propertyName: string, property: ModelPrope
     name: propertyName,
     typeReferenceName: getTsReferenceName(property.type),
     optional: property.optional,
+    origin: property,
   };
 }
 

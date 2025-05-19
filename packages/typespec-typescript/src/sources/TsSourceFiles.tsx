@@ -3,14 +3,14 @@ import { SourceFile } from '@alloy-js/typescript';
 import TsModelDeclaration from '~/components/TsModelDeclaration';
 import TsNewLine from '~/components/TsNewLine';
 import TypespecGenerationComment from '~/components/TypespecGenerationComment';
-import { useTsModelSourceFiles } from '~/hooks/useTsModelSourceFiles';
+import { useTsSources } from '~/hooks/useTsSources';
 
-export interface TsModelSourceProps {
+export interface TsSourceFilesProps {
   root: string;
 }
 
-export default function TsModelSourceFiles(props: TsModelSourceProps) {
-  const sources = useTsModelSourceFiles();
+export default function TsSourceFiles(props: TsSourceFilesProps) {
+  const sources = useTsSources();
 
   return (
     <SourceDirectory path={props.root}>
