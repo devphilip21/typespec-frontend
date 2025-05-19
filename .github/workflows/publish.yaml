@@ -1,0 +1,44 @@
+name: Deploying `typespec-typescript` to the npm registry
+
+on:
+  workflow_dispatch:
+
+env:
+  GITHUB_TOKEN: ${{ github.token }}
+
+jobs:
+  publish-package:
+    name: Publish Package
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "23"
+          registry-url: "https://npm.pkg.github.com"
+      
+      - uses: pnpm/action-setup@v2
+        with:
+          version: "9.15.4"
+
+      - name: Install Dependencies
+        run: pnpm install
+
+      - name: Build `typespec-typescript`
+        run: pnpm build:typespec-typescript
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "philip21.dev@gmail.com"
+          git config --global user.name "devphilip21"
+          git config core.filemode false
+        shell: bash
+
+      - name: Publish Package
+        working-directory: ./packages/typespec-typescript
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npm publish --tag latest

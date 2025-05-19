@@ -2,6 +2,18 @@
   "name": "typespec-typescript",
   "version": "0.0.1",
   "type": "module",
+  "description": "A Emitter for generating TypeScript code from TypeSpec(tsp) language.",
+  "keywords": [
+    "typespec",
+    "typescript",
+    "emitter"
+  ],
+  "author": "devphilip21",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devphilip21/typespec-frontend.git"
+  },
+  "license": "MIT",
   "main": "./dist/index.esm.js",
   "types": "./dist/index.d.ts",
   "scripts": {
