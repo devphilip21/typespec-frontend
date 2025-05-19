@@ -76,7 +76,7 @@ importers:
         specifier: ^5.8.3
         version: 5.8.3
 
-  packages/typescript-interface-emitter:
+  packages/typespec-typescript:
     dependencies:
       '@alloy-js/core':
         specifier: ^0.15.0
@@ -103,6 +103,12 @@ importers:
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
+
+  packages/typespec-typescript-example:
+    devDependencies:
+      typespec-typescript:
+        specifier: workspace:*
+        version: link:../typespec-typescript
 
 packages:
 

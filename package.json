@@ -7,8 +7,10 @@
   },
   "scripts": {
     "build:helper": "pnpm --filter @typespec-frontend/compiler-helper build",
-    "build:emitter": "pnpm --filter @typespec-frontend/typescript-interface-emitter build",
+    "build:emitter": "pnpm --filter typespec-typescript build",
     "build": "pnpm build:helper && pnpm build:emitter",
+    "compile": "pnpm build && pnpm compile:only",
+    "compile:only": "pnpm --filter typespec-typescript-example compile",
     "test": "pnpm -r test"
   },
   "author": "devphilip21 <philip21.dev@gmail.com>",

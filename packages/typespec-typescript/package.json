@@ -2,7 +2,7 @@
   "name": "typespec-typescript",
   "version": "0.0.1",
   "type": "module",
-  "main": "./dist/index.js",
+  "main": "./dist/index.esm.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "prebuild": "eslint src --config=../../eslint.config.mjs",
